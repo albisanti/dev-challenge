@@ -1,0 +1,6 @@
+App\Entity\Transaction:
+  transaction{1..10}:
+    customer: "@customer_*"
+    value: 50.00
+    currency: 'GPB'
+    created_at: <(new DateTimeImmutable("2015-04-01"))>

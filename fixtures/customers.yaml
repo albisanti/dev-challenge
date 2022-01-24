@@ -1,0 +1,5 @@
+App\Entity\Customer:
+  customer_{1..2}:
+    name: <firstName()>
+    surname: <lastName()>
+    email: <email()>
