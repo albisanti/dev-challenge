@@ -13,6 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
     collectionOperations: [
         'report' => [
             'path' => "report/{customer_id}",
+            'method' => 'GET',
             'openapi_context' => [
                 'parameters' => [
                     [

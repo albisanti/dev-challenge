@@ -7,8 +7,11 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 final class CurrencyConverterTest extends KernelTestCase {
 
+    /**
+     * Testing if the service will return a Float number
+     * @return void
+     */
     public function testCalculateEurFromUsd() {
-
         self::bootKernel();
         $container = static::getContainer();
         $converter = $container->get(CurrencyConverter::class);
